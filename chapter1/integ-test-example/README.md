@@ -2,6 +2,18 @@
 ```shell
 # 创建项目
 cargo new --lib integ-test-example && cd integ-test-example
+
+# 运行指定测试函数
+cargo test -- testfunction1, testfunction2
+
+# 运行 ignore 测试函数
+cargo test -- --ignored
+
+# 字符串匹配测试函数
+cargo test files
+
+# 并行测试
+cargo test -- --test-threads=1
 ```
 
 ## 集成测试
