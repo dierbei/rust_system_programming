@@ -14,6 +14,17 @@ cargo test files
 
 # 并行测试
 cargo test -- --test-threads=1
+
+# 创建 doc 文件夹，创建 itest.md 文件
+rustdoc doc/itest.md
+
+# 运行代码测试用例 (运行代码上的注释)
+cargo test --doc
+```
+
+## Rust docs 中心
+```text
+https://docs.rs/
 ```
 
 ## 集成测试
