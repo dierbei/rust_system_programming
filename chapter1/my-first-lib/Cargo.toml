@@ -1,0 +1,17 @@
+[package]
+name = "my-first-lib"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[[bin]]
+name = "mymain"
+path = "src/mymain.rs"
+
+#[lib]
+# 定义Rust 动态链接库
+# 动态链接库不会在编译时将代码嵌入到二进制文件中，而是在运行时将代码链接到二进制文件中
+#crate-type = ["dylib"]
