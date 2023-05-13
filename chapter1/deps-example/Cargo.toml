@@ -1,0 +1,18 @@
+[package]
+name = "deps-example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# 在 Rust 项目中使用 cargo build 命令时，Cargo 会下载包和其依赖项，
+# 并生成一个自动生成的 Cargo.lock 文件，记录了所有下载的 crate 和其确切的版本号
+# 以确保项目的构建过程是可重现的
+chrono = "0.4.0"
+
+# 私服配置
+# cratename = { version = "2.1", registry = "alternate-registry-name" }
+
+# github 配置
+# chrono = { git = "https://github.com/chronotope/chrono" , branch = "master" }
